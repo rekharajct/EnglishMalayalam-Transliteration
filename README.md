@@ -67,7 +67,7 @@ The directory contains follwing  folders:
      
      
      
-## To run the seq2seq modle without attention
+## To run the seq2seq model without attention
 In main.py the neural network is initialized by the best hyperparameter setting obtained. 
 To train the model with the same hyperparamer settings:
 ```
@@ -90,7 +90,6 @@ The above arguments will train RNN with , adam optimizer and learning rate 0.000
 | `-b`, `--batch_size` |512 | Batch size used to train neural network. |
 |  `-o`, `--optimizer` | adaam | choices:  [ "rmsprop", "adam", "nadam"] | 
 | `-lr`, `--learning_rate` | 0.001 | Learning rate used to optimize model parameters | 
-| 
 | `-nl`, `--num_layers` | 2 | Number of hidden layers used in feedforward neural network. | 
 | 'd', '--dropout'|0.5 | droput probability|
 | 'tf', '--teacher_forcing_ratio'| 0.5|teacher forcing ratio decoder|
@@ -126,7 +125,6 @@ The above arguments will train RNN with , adam optimizer and learning rate 0.000
 | `-b`, `--batch_size` |512 | Batch size used to train neural network. | 
 |  `-o`, `--optimizer` | adaam | choices:  [ "rmsprop", "adam", "nadam"] | 
 | `-lr`, `--learning_rate` | 0.001 | Learning rate used to optimize model parameters | 
-| 
 | `-nl`, `--num_layers` | 1 | Number of hidden layers used in feedforward neural network. | 
 | 'd', '--dropout'|0.5 | droput probability|
 | 'tf', '--teacher_forcing_ratio'| 0.5|teacher forcing ratio decoder|
