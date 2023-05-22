@@ -87,7 +87,7 @@ The above arguments will train RNN with , adam optimizer and learning rate 0.000
 | `-wp`, `--wandb_project` | seq2seq | Project name used to track experiments in Weights & Biases dashboard |
 | `-we`, `--wandb_entity` | deep-learning-assignment | Wandb Entity used to track experiments in the Weights & Biases dashboard. |
 |  `-e`, `--epochs` | 100 |  Number of epochs to train neural network.|
-| `-b`, `--batch_size` |512 | Batch size used to train neural network. | |
+| `-b`, `--batch_size` |512 | Batch size used to train neural network. |
 |  `-o`, `--optimizer` | adaam | choices:  [ "rmsprop", "adam", "nadam"] | 
 | `-lr`, `--learning_rate` | 0.001 | Learning rate used to optimize model parameters | 
 | 
@@ -123,7 +123,7 @@ The above arguments will train RNN with , adam optimizer and learning rate 0.000
 | `-wp`, `--wandb_project` | seq2seq | Project name used to track experiments in Weights & Biases dashboard |
 | `-we`, `--wandb_entity` | deep-learning-assignment | Wandb Entity used to track experiments in the Weights & Biases dashboard. |
 |  `-e`, `--epochs` | 100 |  Number of epochs to train neural network.|
-| `-b`, `--batch_size` |512 | Batch size used to train neural network. | |
+| `-b`, `--batch_size` |512 | Batch size used to train neural network. | 
 |  `-o`, `--optimizer` | adaam | choices:  [ "rmsprop", "adam", "nadam"] | 
 | `-lr`, `--learning_rate` | 0.001 | Learning rate used to optimize model parameters | 
 | 
