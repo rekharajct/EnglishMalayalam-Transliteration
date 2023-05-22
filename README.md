@@ -93,14 +93,13 @@ The above arguments will train RNN with , adam optimizer and learning rate 0.000
 | `-nl`, `--num_layers` | 2 | Number of hidden layers used in feedforward neural network. | 
 | 'd', '--dropout'|0.5 | droput probability|
 | 'tf', '--teacher_forcing_ratio'| 0.5|teacher forcing ratio decoder|
-|"-eed", "--enc_emb_dim | Embedding dimension of encoder|
-|"-ded", "--dec_emb_dim"| Embedding dimension of decoder|
-|"-hd", "--hidden_dim"| Hidden dimension of encoder and decoder|
-|"-bi", "--bidirectional"|, Choices:True, False|
-|"-sa", "--show_attn"|Show attention maps|
-|"-sp", "--save_pred"| Save the predictions|
-|"-test","--test"|"choices: True if perform test, else False", default=True|
-|"-sweep","--sweep"| "choices: True if perform wandb sweep, else False", default=True)  |
+|"-eed", "--enc_emb_dim | 256|Embedding dimension of encoder|
+|"-ded", "--dec_emb_dim"|256| Embedding dimension of decoder|
+|"-hd", "--hidden_dim"| 512|Hidden dimension of encoder and decoder|
+|"-bi", "--bidirectional"|False| Choices:True, False|
+|"-sp", "--save_pred"|False| Save the predictions|
+|"-test","--test"|False|"choices: True if perform test, else False", default=True|
+|"-sweep","--sweep"| True|"choices: True if perform wandb sweep, else False", default=True)  |
 
 ## To run the seq2seq modle with attention
 In main.py the neural network is initialized by the best hyperparameter setting obtained. 
@@ -130,11 +129,11 @@ The above arguments will train RNN with , adam optimizer and learning rate 0.000
 | 'tf', '--teacher_forcing_ratio'| 0.5|teacher forcing ratio decoder|
 |"-eed", "--enc_emb_dim |256| Embedding dimension of encoder|
 |"-ded", "--dec_emb_dim"| 256| Embedding dimension of decoder|
-|"-hd", "--hidden_dim"| Hidden dimension of encoder and decoder|
-|"-sa", "--show_attn"|Show attention maps|
-|"-sp", "--save_pred"| Save the predictions|
-|"-test","--test"|"choices: True if perform test, else False", default=True|
-|"-sweep","--sweep"| "choices: True if perform wandb sweep, else False", default=True)  |
+|"-hd", "--hidden_dim"|512| Hidden dimension of encoder and decoder|
+|"-sa", "--show_attn"|False|Show attention maps|
+|"-sp", "--save_pred"| False|Save the predictions|
+|"-test","--test"|True|"choices: True if perform test, else False", default=True|
+|"-sweep","--sweep"|True| "choices: True if perform wandb sweep, else False", default=True)  |
  ```
  
  
